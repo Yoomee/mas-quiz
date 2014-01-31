@@ -19,11 +19,12 @@ GIT
 
 GIT
   remote: https://ec328b2267bdb5056f966233dc2a43a1beb60e7c:x-oauth-basic@github.com/moneyadviceservice/quiz.git
-  revision: 1d4373e6ae1ffd56da7c55d14dc29bb6f6914cf3
+  revision: 3b7b32a8e4090eb9824119b1ffd555a5530d0bdf
   specs:
     quiz (0.0.1)
       cocoon (~> 1.2.5)
       formtastic-bootstrap (~> 2.1.3)
+      httparty
       rails (~> 3.2.13)
 
 GEM
@@ -117,6 +118,9 @@ GEM
       tilt
     hike (1.2.3)
     http_parser.rb (0.5.3)
+    httparty (0.12.0)
+      json (~> 1.8)
+      multi_xml (>= 0.5.2)
     i18n (0.6.9)
     journey (1.0.4)
     jquery-rails (2.1.2)
@@ -130,6 +134,7 @@ GEM
       treetop (~> 1.4.8)
     mime-types (1.25.1)
     multi_json (1.8.4)
+    multi_xml (0.5.5)
     newrelic_rpm (3.7.1.188)
     pg (0.17.1)
     polyglot (0.3.3)

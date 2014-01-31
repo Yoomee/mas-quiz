@@ -16,6 +16,7 @@ ActiveRecord::Schema.define(:version => 20140129131056) do
   create_table "quiz_questions", :force => true do |t|
     t.integer  "quiz_id"
     t.string   "name"
+    t.text     "info"
     t.string   "answer_1"
     t.string   "answer_2"
     t.string   "answer_3"
@@ -24,8 +25,11 @@ ActiveRecord::Schema.define(:version => 20140129131056) do
     t.datetime "updated_at", :null => false
   end
 
+  add_index "quiz_questions", ["quiz_id"], :name => "index_quiz_questions_on_quiz_id"
+
   create_table "quiz_quizzes", :force => true do |t|
     t.string   "name"
+    t.text     "feed_url"
     t.boolean  "archived",   :default => false
     t.datetime "created_at",                    :null => false
     t.datetime "updated_at",                    :null => false
