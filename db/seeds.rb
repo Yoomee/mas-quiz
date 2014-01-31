@@ -1,0 +1,1 @@
+quiz = Quiz::Quiz.create(:name => "Think you know about credit cards?")
