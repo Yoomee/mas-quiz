@@ -4,6 +4,6 @@ MasQuiz::Application.routes.draw do
     mount Quiz::Engine => "/quiz"
   end
   
-  root :to => redirect('/en/quiz/scenarios')
+  root :to => redirect('/en/quiz')
   
 end
