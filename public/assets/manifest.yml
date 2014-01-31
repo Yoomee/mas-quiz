@@ -3,8 +3,12 @@ application.js: application-5ef92bbdd1eaccf7096d5ea834943582.js
 application/index.js: application-5ef92bbdd1eaccf7096d5ea834943582.js
 application.css: application-1b13569e9620782f423d4cd3ce931750.css
 application/index.css: application-1b13569e9620782f423d4cd3ce931750.css
+quiz/admin.js: quiz/admin-bade70ea2cff41c209d4727bcbd58e97.js
+quiz/admin/index.js: quiz/admin-bade70ea2cff41c209d4727bcbd58e97.js
 quiz/application.js: quiz/application-bade70ea2cff41c209d4727bcbd58e97.js
 quiz/application/index.js: quiz/application-bade70ea2cff41c209d4727bcbd58e97.js
+quiz/admin.css: quiz/admin-c46183ecd8982cc09a83fe915ba79b40.css
+quiz/admin/index.css: quiz/admin-c46183ecd8982cc09a83fe915ba79b40.css
 museo_slab_100-webfont.eot: museo_slab_100-webfont-05fdda83b091d685c53cabf896560381.eot
 museo_slab_100-webfont/index.eot: museo_slab_100-webfont-05fdda83b091d685c53cabf896560381.eot
 museo_slab_100-webfont.otf: museo_slab_100-webfont-f138bb069bc28a09634c93af1f56a13d.otf
