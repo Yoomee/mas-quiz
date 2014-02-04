@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140204095232) do
+ActiveRecord::Schema.define(:version => 20140204111248) do
 
   create_table "quiz_partners", :force => true do |t|
     t.string   "name"
@@ -21,6 +21,20 @@ ActiveRecord::Schema.define(:version => 20140204095232) do
   end
 
   add_index "quiz_partners", ["slug"], :name => "index_quiz_partners_on_slug", :unique => true
+
+  create_table "quiz_player_responses", :force => true do |t|
+    t.integer  "response"
+    t.boolean  "correct"
+    t.integer  "player_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "quiz_players", :force => true do |t|
+    t.integer  "widget_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
 
   create_table "quiz_questions", :force => true do |t|
     t.integer  "quiz_id"
