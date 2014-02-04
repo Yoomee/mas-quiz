@@ -19,12 +19,13 @@ GIT
 
 GIT
   remote: https://ec328b2267bdb5056f966233dc2a43a1beb60e7c:x-oauth-basic@github.com/moneyadviceservice/quiz.git
-  revision: 3b7b32a8e4090eb9824119b1ffd555a5530d0bdf
+  revision: 7d40eb7f439d61413c26af25b272c962aa526104
   specs:
     quiz (0.0.1)
       cocoon (~> 1.2.5)
+      devise (~> 2.2.0)
       formtastic-bootstrap (~> 2.1.3)
-      httparty
+      friendly_id (~> 4.0)
       rails (~> 3.2.13)
 
 GEM
@@ -62,6 +63,7 @@ GEM
     arr-pm (0.0.8)
       cabin (> 0)
     backports (3.4.1)
+    bcrypt-ruby (3.1.2)
     builder (3.0.4)
     cabin (0.6.1)
     childprocess (0.4.0)
@@ -90,6 +92,11 @@ GEM
       debugger-ruby_core_source (~> 1.3.1)
     debugger-linecache (1.2.0)
     debugger-ruby_core_source (1.3.1)
+    devise (2.2.8)
+      bcrypt-ruby (~> 3.0)
+      orm_adapter (~> 0.1)
+      railties (~> 3.1)
+      warden (~> 1.2.1)
     erubis (2.7.0)
     eventmachine (1.0.3)
     execjs (2.0.2)
@@ -107,6 +114,8 @@ GEM
       ffi
       ftw (~> 0.0.30)
       json (>= 1.7.7)
+    friendly_id (4.0.10.1)
+      activerecord (>= 3.0, < 4.0)
     fssm (0.2.10)
     ftw (0.0.39)
       addressable
@@ -118,9 +127,6 @@ GEM
       tilt
     hike (1.2.3)
     http_parser.rb (0.5.3)
-    httparty (0.12.0)
-      json (~> 1.8)
-      multi_xml (>= 0.5.2)
     i18n (0.6.9)
     journey (1.0.4)
     jquery-rails (2.1.2)
@@ -134,8 +140,8 @@ GEM
       treetop (~> 1.4.8)
     mime-types (1.25.1)
     multi_json (1.8.4)
-    multi_xml (0.5.5)
     newrelic_rpm (3.7.1.188)
+    orm_adapter (0.5.0)
     pg (0.17.1)
     polyglot (0.3.3)
     rack (1.4.5)
@@ -190,6 +196,8 @@ GEM
     uglifier (2.4.0)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
+    warden (1.2.3)
+      rack (>= 1.0)
 
 PLATFORMS
   ruby
