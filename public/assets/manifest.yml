@@ -15,10 +15,10 @@ quiz/admin.js: quiz/admin-50b62fab46eac9f85a266bfb4e7e0913.js
 quiz/admin/index.js: quiz/admin-50b62fab46eac9f85a266bfb4e7e0913.js
 quiz/application.js: quiz/application-50b62fab46eac9f85a266bfb4e7e0913.js
 quiz/application/index.js: quiz/application-50b62fab46eac9f85a266bfb4e7e0913.js
-quiz/admin.css: quiz/admin-25b10382e1986f0d9c67ee0ad1e37bd5.css
-quiz/admin/index.css: quiz/admin-25b10382e1986f0d9c67ee0ad1e37bd5.css
-quiz/widget.css: quiz/widget-954f7a5c72a7e2a5b244de68b25abb00.css
-quiz/widget/index.css: quiz/widget-954f7a5c72a7e2a5b244de68b25abb00.css
+quiz/admin.css: quiz/admin-5716e4e885bde5ada36a45393fe28890.css
+quiz/admin/index.css: quiz/admin-5716e4e885bde5ada36a45393fe28890.css
+quiz/widget.css: quiz/widget-b71af088622fcc32ea2d766e45c54da9.css
+quiz/widget/index.css: quiz/widget-b71af088622fcc32ea2d766e45c54da9.css
 museo_slab_100-webfont.eot: museo_slab_100-webfont-05fdda83b091d685c53cabf896560381.eot
 museo_slab_100-webfont/index.eot: museo_slab_100-webfont-05fdda83b091d685c53cabf896560381.eot
 museo_slab_100-webfont.otf: museo_slab_100-webfont-f138bb069bc28a09634c93af1f56a13d.otf
