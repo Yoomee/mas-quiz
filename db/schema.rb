@@ -50,6 +50,7 @@ ActiveRecord::Schema.define(:version => 20140205121947) do
     t.integer  "quiz_id"
     t.text     "name"
     t.text     "info"
+    t.string   "image_uid"
     t.string   "answer_1"
     t.string   "answer_2"
     t.string   "answer_3"

@@ -16,6 +16,7 @@ gem 'mas-assets', :git => "https://#{github_auth}@github.com/moneyadviceservice/
 gem 'newrelic_rpm'
 gem 'haml'
 gem 'thin'
+gem 'dragonfly-s3_data_store'
 
 group :production do
   gem 'pg'

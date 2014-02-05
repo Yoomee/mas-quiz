@@ -19,11 +19,12 @@ GIT
 
 GIT
   remote: https://ec328b2267bdb5056f966233dc2a43a1beb60e7c:x-oauth-basic@github.com/moneyadviceservice/quiz.git
-  revision: 4ce771d8b64818ee10d919f49a635f8ddaeacb64
+  revision: 532b77c73522ba23ce36f36e4ea13e6e7a859ec8
   specs:
     quiz (0.0.1)
       cocoon (~> 1.2.5)
       devise (~> 2.2.0)
+      dragonfly (~> 1.0.3)
       formtastic-bootstrap (~> 2.1.3)
       friendly_id (~> 4.0)
       rails (~> 3.2.13)
@@ -97,10 +98,28 @@ GEM
       orm_adapter (~> 0.1)
       railties (~> 3.1)
       warden (~> 1.2.1)
+    dragonfly (1.0.3)
+      multi_json (~> 1.0)
+      rack
+    dragonfly-s3_data_store (1.0.3)
+      dragonfly (~> 1.0)
+      fog
     erubis (2.7.0)
     eventmachine (1.0.3)
+    excon (0.31.0)
     execjs (2.0.2)
     ffi (1.9.3)
+    fog (1.19.0)
+      builder
+      excon (~> 0.31.0)
+      formatador (~> 0.2.0)
+      mime-types
+      multi_json (~> 1.0)
+      net-scp (~> 1.1)
+      net-ssh (>= 2.1.3)
+      nokogiri (~> 1.5)
+      ruby-hmac
+    formatador (0.2.4)
     formtastic (2.2.1)
       actionpack (>= 3.0)
     formtastic-bootstrap (2.1.3)
@@ -139,8 +158,14 @@ GEM
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
     mime-types (1.25.1)
+    mini_portile (0.5.2)
     multi_json (1.8.4)
+    net-scp (1.1.2)
+      net-ssh (>= 2.6.5)
+    net-ssh (2.8.0)
     newrelic_rpm (3.7.1.188)
+    nokogiri (1.6.1)
+      mini_portile (~> 0.5.0)
     orm_adapter (0.5.0)
     pg (0.17.1)
     polyglot (0.3.3)
@@ -169,6 +194,7 @@ GEM
     rake (10.1.1)
     rdoc (3.12.2)
       json (~> 1.4)
+    ruby-hmac (0.4.0)
     sass (3.2.14)
     sass-rails (3.2.6)
       railties (~> 3.2.0)
@@ -205,6 +231,7 @@ PLATFORMS
 DEPENDENCIES
   coffee-rails (~> 3.2.1)
   debugger
+  dragonfly-s3_data_store
   haml
   jquery-rails (= 2.1.2)
   mas-assets!
