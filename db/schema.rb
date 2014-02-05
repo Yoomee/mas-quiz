@@ -55,9 +55,9 @@ ActiveRecord::Schema.define(:version => 20140205121947) do
     t.string   "answer_2"
     t.string   "answer_3"
     t.string   "answer_4"
-    t.integer  "correct_answer"
-    t.datetime "created_at",     :null => false
-    t.datetime "updated_at",     :null => false
+    t.integer  "correct_answer_number"
+    t.datetime "created_at",            :null => false
+    t.datetime "updated_at",            :null => false
   end
 
   add_index "quiz_questions", ["quiz_id"], :name => "index_quiz_questions_on_quiz_id"

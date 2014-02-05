@@ -9,7 +9,7 @@ quiz.questions.build(
   :answer_3 => "2 3 and 4",
   :answer_4 => "All of the above",
   :info => "It can be difficult to change the amount of money you have coming in – but you have much more control over what goes out. Your budget shows you where your money’s going, so you can see if there’s anything you can easily cut back on, or shop around for a better deal.\n\nAs a first quick and easy step, use our cut-back calculator to see how you can save by cutting out things you buy regularly that are perhaps non-essentials. This isn’t to say that you shouldn’t enjoy treats, but you might be surprised at how much small things – like a daily coffee when out – add up!",
-  :correct_answer => 1
+  :correct_answer_number => 1
 )
 
 quiz.questions.build(
@@ -19,7 +19,7 @@ quiz.questions.build(
   :answer_3 => "1 2 and 4",
   :answer_4 => "All of the above",
   :info => "The first step to taking control of your money is creating your own personal budget plan.Our easy-to-use Budget planner will help you get started - and it only takes five minutes.",
-  :correct_answer => 2
+  :correct_answer_number => 2
 )
 
 quiz.questions.build(
@@ -29,7 +29,7 @@ quiz.questions.build(
   :answer_3 => "1 2 and 4",
   :answer_4 => "All of the above",
   :info => "It is usually advisable to pay off the bill every month; if you do you won’t pay interest on what you borrow. If you don’t pay the bill off in full the interest can be very high. It’s usually backdated too, so if you bought something at the start of the month you’ll be charged a whole month’s interest, if you don’t pay it off in full.",
-  :correct_answer => 1
+  :correct_answer_number => 1
 )
 
 quiz.save
