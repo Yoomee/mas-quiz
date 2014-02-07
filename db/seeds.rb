@@ -25,7 +25,7 @@ quiz.questions.build(
 quiz.questions.build(
   :name => "When managing credit card debt you should:\n\n1. Pay more than the minimum amount of your outstanding balanc\n2. Pay the most expensive card firs\n3. Consider transferring the balance to a card that pays a lower rate of interes\n4. Take a cash advance on your card",
   :answer_1 => "1 2 and 3",
-  :answer_2 => "1 and and",
+  :answer_2 => "1 and 2",
   :answer_3 => "1 2 and 4",
   :answer_4 => "All of the above",
   :info => "It is usually advisable to pay off the bill every month; if you do you won’t pay interest on what you borrow. If you don’t pay the bill off in full the interest can be very high. It’s usually backdated too, so if you bought something at the start of the month you’ll be charged a whole month’s interest, if you don’t pay it off in full.",
@@ -33,8 +33,6 @@ quiz.questions.build(
 )
 
 quiz.save
-
-quiz.widgets.create(:partner_name => 'A partner')
 
 # Universal Credit Quiz
 # /////////////////////////////////////////////
@@ -52,7 +50,6 @@ quiz.questions.build(
 )
 
 quiz.save
-quiz.widgets.create(:partner_name => 'A partner')
 
 # Credit Ratings Quiz
 # /////////////////////////////////////////////
@@ -140,5 +137,8 @@ quiz.questions.build(
 )
 
 quiz.save
-quiz.widgets.create(:partner_name => 'A partner')
+
+Quiz::Quiz.all.each_with_index do |quiz, index|
+  quiz.widgets.create(:partner_name => "Partner #{index}")
+end
 
