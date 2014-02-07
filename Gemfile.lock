@@ -19,7 +19,7 @@ GIT
 
 GIT
   remote: https://ec328b2267bdb5056f966233dc2a43a1beb60e7c:x-oauth-basic@github.com/moneyadviceservice/quiz.git
-  revision: 5381a4da650e3a1c22322f94f2eff60580d0f30b
+  revision: 7993dc3e40a571198cb434ea9d5024d317ec4326
   specs:
     quiz (0.0.1)
       cocoon (~> 1.2.5)
@@ -61,9 +61,9 @@ GEM
       multi_json (~> 1.0)
     addressable (2.3.5)
     arel (3.0.3)
-    arr-pm (0.0.8)
+    arr-pm (0.0.9)
       cabin (> 0)
-    backports (3.4.1)
+    backports (3.5.0)
     bcrypt-ruby (3.1.2)
     builder (3.0.4)
     cabin (0.6.1)
@@ -163,7 +163,7 @@ GEM
     net-scp (1.1.2)
       net-ssh (>= 2.6.5)
     net-ssh (2.8.0)
-    newrelic_rpm (3.7.1.188)
+    newrelic_rpm (3.7.2.192)
     nokogiri (1.6.1)
       mini_portile (~> 0.5.0)
     orm_adapter (0.5.0)
