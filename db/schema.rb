@@ -36,8 +36,9 @@ ActiveRecord::Schema.define(:version => 20140205121947) do
     t.integer  "response"
     t.boolean  "correct"
     t.integer  "player_id"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.integer  "question_id"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
   end
 
   create_table "quiz_players", :force => true do |t|
@@ -56,6 +57,7 @@ ActiveRecord::Schema.define(:version => 20140205121947) do
     t.string   "answer_3"
     t.string   "answer_4"
     t.integer  "correct_answer_number"
+    t.string   "url"
     t.datetime "created_at",            :null => false
     t.datetime "updated_at",            :null => false
   end
