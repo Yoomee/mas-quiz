@@ -87,6 +87,7 @@ ActiveRecord::Schema.define(:version => 20140214092021) do
 
   create_table "quiz_quizzes", :force => true do |t|
     t.string   "name"
+    t.string   "slogan"
     t.text     "feed_url"
     t.boolean  "archived",   :default => false
     t.datetime "created_at",                    :null => false

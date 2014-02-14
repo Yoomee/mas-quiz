@@ -1,6 +1,6 @@
 # encoding: UTF-8
 
-quiz = Quiz::Quiz.new(:name => "Managing Your Money Quiz", :feed_url => "https://www.publish2.com/organizations/4668/feeds/2026/content.json")
+quiz = Quiz::Quiz.new(:name => "Managing Your Money Quiz", :slogan => "Try the Managing Your Money Quiz", :feed_url => "https://www.publish2.com/organizations/4668/feeds/2026/content.json")
 
 quiz.questions.build(
   :name => "What are the top tips to help make your money last until the end of the month?\n\n1. Complete a budget planner\n2. Apply for a payday loan\n3. Review monthly bills and shop around\n4. Spend on essentials first to avoid unnecessary debt",
@@ -37,7 +37,7 @@ quiz.save
 # Universal Credit Quiz
 # /////////////////////////////////////////////
 
-quiz = Quiz::Quiz.new(:name => "Universal Credit Quiz", :feed_url => "https://www.publish2.com/organizations/4668/feeds/1023/content.json")
+quiz = Quiz::Quiz.new(:name => "Universal Credit Quiz", :slogan => "Try the Universal Credit Quiz", :feed_url => "https://www.publish2.com/organizations/4668/feeds/1023/content.json")
 
 quiz.questions.build(
   :name => "Does the content on 'Universal Credit - An Introduction' display OK?",
@@ -54,7 +54,7 @@ quiz.save
 # Credit Ratings Quiz
 # /////////////////////////////////////////////
 
-quiz = Quiz::Quiz.new(:name => "Credit Ratings Quiz", :feed_url => "https://www.publish2.com/organizations/4668/feeds/2101/content.json")
+quiz = Quiz::Quiz.new(:name => "Credit Ratings Quiz", :slogan => "Try the Credit Ratings Quiz", :feed_url => "https://www.publish2.com/organizations/4668/feeds/2101/content.json")
 
 quiz.questions.build(
   :name => "I've unsuccessfully applied for a credit card. Will this mean I won't get credit in the future?",
