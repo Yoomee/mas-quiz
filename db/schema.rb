@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140205121947) do
+ActiveRecord::Schema.define(:version => 20140214092021) do
 
   create_table "quiz_audit_records", :force => true do |t|
     t.integer  "user_id"
@@ -91,6 +91,14 @@ ActiveRecord::Schema.define(:version => 20140205121947) do
     t.boolean  "archived",   :default => false
     t.datetime "created_at",                    :null => false
     t.datetime "updated_at",                    :null => false
+  end
+
+  create_table "quiz_snippets", :force => true do |t|
+    t.string  "slug"
+    t.string  "name"
+    t.string  "field_type"
+    t.text    "value"
+    t.integer "position"
   end
 
   create_table "quiz_widget_hosts", :force => true do |t|
