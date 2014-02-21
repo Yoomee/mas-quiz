@@ -26,8 +26,11 @@ ActiveRecord::Schema.define(:version => 20140214092021) do
   create_table "quiz_partners", :force => true do |t|
     t.string   "name"
     t.string   "slug"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.string   "background_color"
+    t.string   "primary_color"
+    t.string   "secondary_color"
+    t.datetime "created_at",       :null => false
+    t.datetime "updated_at",       :null => false
   end
 
   add_index "quiz_partners", ["slug"], :name => "index_quiz_partners_on_slug", :unique => true
@@ -49,15 +52,18 @@ ActiveRecord::Schema.define(:version => 20140214092021) do
 
   create_table "quiz_questions", :force => true do |t|
     t.integer  "quiz_id"
-    t.text     "name"
-    t.text     "info"
+    t.text     "question_en"
+    t.text     "question_cy"
     t.string   "image_uid"
-    t.string   "answer_1"
-    t.string   "answer_2"
-    t.string   "answer_3"
-    t.string   "answer_4"
+    t.string   "answer_1_en"
+    t.string   "answer_2_en"
+    t.string   "answer_3_en"
+    t.string   "answer_4_en"
+    t.string   "answer_1_cy"
+    t.string   "answer_2_cy"
+    t.string   "answer_3_cy"
+    t.string   "answer_4_cy"
     t.integer  "correct_answer_number"
-    t.string   "url"
     t.datetime "created_at",            :null => false
     t.datetime "updated_at",            :null => false
   end
@@ -86,20 +92,19 @@ ActiveRecord::Schema.define(:version => 20140214092021) do
   add_index "quiz_quiz_users", ["reset_password_token"], :name => "index_quiz_quiz_users_on_reset_password_token", :unique => true
 
   create_table "quiz_quizzes", :force => true do |t|
-    t.string   "name"
-    t.string   "slogan"
-    t.text     "feed_url"
-    t.boolean  "archived",   :default => false
-    t.datetime "created_at",                    :null => false
-    t.datetime "updated_at",                    :null => false
-  end
-
-  create_table "quiz_snippets", :force => true do |t|
-    t.string  "slug"
-    t.string  "name"
-    t.string  "field_type"
-    t.text    "value"
-    t.integer "position"
+    t.string   "name_en"
+    t.string   "name_cy"
+    t.string   "slogan_en"
+    t.string   "slogan_cy"
+    t.string   "score_summary_low_en"
+    t.string   "score_summary_mid_en"
+    t.string   "score_summary_high_en"
+    t.string   "score_summary_low_cy"
+    t.string   "score_summary_mid_cy"
+    t.string   "score_summary_high_cy"
+    t.boolean  "archived",              :default => false
+    t.datetime "created_at",                               :null => false
+    t.datetime "updated_at",                               :null => false
   end
 
   create_table "quiz_widget_hosts", :force => true do |t|
@@ -111,11 +116,24 @@ ActiveRecord::Schema.define(:version => 20140214092021) do
 
   add_index "quiz_widget_hosts", ["widget_id"], :name => "index_quiz_widget_hosts_on_widget_id"
 
+  create_table "quiz_widget_snippets", :force => true do |t|
+    t.integer "widget_id"
+    t.integer "question_id"
+    t.string  "slug"
+    t.text    "value"
+  end
+
   create_table "quiz_widgets", :force => true do |t|
     t.integer  "quiz_id"
     t.integer  "partner_id"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.text     "feed_url_en"
+    t.text     "feed_url_cy"
+    t.string   "background_color"
+    t.string   "primary_color"
+    t.string   "secondary_color"
+    t.boolean  "no_follow"
+    t.datetime "created_at",       :null => false
+    t.datetime "updated_at",       :null => false
   end
 
   add_index "quiz_widgets", ["partner_id"], :name => "index_quiz_widgets_on_partner_id"
