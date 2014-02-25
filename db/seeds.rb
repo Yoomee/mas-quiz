@@ -1,5 +1,7 @@
 # encoding: UTF-8
 
+Quiz::Partner.create(:name => "MAS", :background_color => '#EEEFF2', :primary_color => '#69b23d', :secondary_color => '#536675')
+
 quiz = Quiz::Quiz.new(:name_en => "Managing Your Money Quiz", :slogan_en => "Try the Managing Your Money Quiz")
 
 quiz.questions.build(
