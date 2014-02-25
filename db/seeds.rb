@@ -1,6 +1,6 @@
 # encoding: UTF-8
 
-Quiz::Partner.create(:name => "MAS", :background_color => '#EEEFF2', :primary_color => '#69b23d', :secondary_color => '#536675')
+Quiz::Partner.create(:name => "MAS", :background_color => '#EEEFF2', :primary_color => '#afd526', :secondary_color => '#536675')
 
 quiz = Quiz::Quiz.new(:name_en => "Managing Your Money Quiz", :slogan_en => "Try the Managing Your Money Quiz")
 
@@ -140,7 +140,7 @@ quiz.questions.build(
 
 quiz.save
 Quiz::Quiz.all.each_with_index do |quiz, index|
-  quiz.widgets.create(:partner_name => "Partner #{index}", :feed_url_en => "https://www.publish2.com/organizations/4668/feeds/2026/content.json", :background_color => '#EEEFF2', :primary_color => '#69b23d', :secondary_color => '#536675')
+  quiz.widgets.create(:partner_name => "Partner #{index}", :feed_url_en => "https://www.publish2.com/organizations/4668/feeds/2026/content.json", :background_color => '#EEEFF2', :primary_color => '#afd526', :secondary_color => '#536675')
 end
 
 
@@ -255,7 +255,7 @@ Quiz::Widget.create({:quiz => quiz,
                     :partner_name => "Money Advice Service",
                     :feed_url_en => "https://www.publish2.com/organizations/4668/feeds/2026/content.json",
                     :background_color => '#EEEFF2',
-                    :primary_color => '#69b23d',
+                    :primary_color => '#afd526',
                     :secondary_color => '#536675',
                     :question_1_information_en => 'Checking your own credit report will not affect your credit rating. It will not show on your personal credit report and will not show up when potential lenders request a credit check',
                     :question_2_information_en => 'Debts are linked to a person, not an address, and the debts move with the person. Anyone living at your address before you should not affect anyone else living there now, unless that person is tied to you in some way financially, like husband and wife.',

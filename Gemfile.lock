@@ -17,9 +17,8 @@ GIT
     mas-build (2.1.0)
       fpm (~> 1.0)
 
-GIT
-  remote: https://ec328b2267bdb5056f966233dc2a43a1beb60e7c:x-oauth-basic@github.com/moneyadviceservice/quiz.git
-  revision: 6c5387cb6bce4552dc232182386af6dc5ffb4c78
+PATH
+  remote: ../quiz
   specs:
     quiz (0.0.1)
       cocoon (~> 1.2.5)
