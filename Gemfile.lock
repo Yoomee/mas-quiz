@@ -19,7 +19,7 @@ GIT
 
 GIT
   remote: https://ec328b2267bdb5056f966233dc2a43a1beb60e7c:x-oauth-basic@github.com/moneyadviceservice/quiz.git
-  revision: 67dcf21a70adfedcd5da2fbba170d93e6339af13
+  revision: 6c6e1a14f174cb2ca5af5fcb3d32cef507f6653f
   specs:
     quiz (0.0.1)
       cocoon (~> 1.2.5)
@@ -64,7 +64,9 @@ GEM
     arr-pm (0.0.9)
       cabin (> 0)
     backports (3.5.0)
-    bcrypt-ruby (3.1.2)
+    bcrypt (3.1.7)
+    bcrypt-ruby (3.1.5)
+      bcrypt (>= 3.1.3)
     builder (3.0.4)
     cabin (0.6.1)
     childprocess (0.4.0)
