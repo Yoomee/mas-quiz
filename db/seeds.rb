@@ -144,7 +144,7 @@ Quiz::Quiz.all.each_with_index do |quiz, index|
 end
 
 
-quiz = Quiz::Quiz.new(:name_en => 'Credit Ratings Myth Busters Quiz',
+quiz = Quiz::Quiz.new(:name_en => 'Credit Ratings Myth Busters',
                       :slogan_en => 'Try the Credit Ratings Myth Busters Quiz',
                       :score_summary_low_en => 'Bad Credit',
                       :score_summary_mid_en => 'Would you credit it?',
