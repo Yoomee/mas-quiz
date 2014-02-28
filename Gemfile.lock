@@ -19,7 +19,7 @@ GIT
 
 GIT
   remote: https://ec328b2267bdb5056f966233dc2a43a1beb60e7c:x-oauth-basic@github.com/moneyadviceservice/quiz.git
-  revision: 11c5bf2cb6f660f2d324eb78166a113e2b6fdb54
+  revision: 338ecc5f032d54c164e973767d10b4fd7685e1ee
   specs:
     quiz (0.0.1)
       cocoon (~> 1.2.5)
@@ -170,7 +170,7 @@ GEM
       mini_portile (~> 0.5.0)
     orm_adapter (0.5.0)
     pg (0.17.1)
-    polyglot (0.3.3)
+    polyglot (0.3.4)
     rack (1.4.5)
     rack-cache (1.2)
       rack (>= 0.4)
