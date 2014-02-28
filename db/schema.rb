@@ -38,6 +38,7 @@ ActiveRecord::Schema.define(:version => 20140214092021) do
   create_table "quiz_player_responses", :force => true do |t|
     t.integer  "response"
     t.boolean  "correct"
+    t.boolean  "demo"
     t.integer  "player_id"
     t.integer  "question_id"
     t.datetime "created_at",  :null => false
@@ -46,6 +47,7 @@ ActiveRecord::Schema.define(:version => 20140214092021) do
 
   create_table "quiz_players", :force => true do |t|
     t.integer  "widget_id"
+    t.boolean  "demo"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
@@ -128,12 +130,15 @@ ActiveRecord::Schema.define(:version => 20140214092021) do
     t.integer  "partner_id"
     t.text     "feed_url_en"
     t.text     "feed_url_cy"
+    t.text     "front_page_text_en"
+    t.text     "front_page_text_cy"
+    t.string   "image_uid"
     t.string   "background_color"
     t.string   "primary_color"
     t.string   "secondary_color"
     t.boolean  "no_follow"
-    t.datetime "created_at",       :null => false
-    t.datetime "updated_at",       :null => false
+    t.datetime "created_at",         :null => false
+    t.datetime "updated_at",         :null => false
   end
 
   add_index "quiz_widgets", ["partner_id"], :name => "index_quiz_widgets_on_partner_id"
