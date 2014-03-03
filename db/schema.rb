@@ -136,6 +136,10 @@ ActiveRecord::Schema.define(:version => 20140214092021) do
     t.string   "background_color"
     t.string   "primary_color"
     t.string   "secondary_color"
+    t.string   "answer_1_color"
+    t.string   "answer_2_color"
+    t.string   "answer_3_color"
+    t.string   "answer_4_color"
     t.boolean  "no_follow"
     t.datetime "created_at",         :null => false
     t.datetime "updated_at",         :null => false
