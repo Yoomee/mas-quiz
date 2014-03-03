@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140214092021) do
+ActiveRecord::Schema.define(:version => 20140302232912) do
 
   create_table "quiz_audit_records", :force => true do |t|
     t.integer  "user_id"
@@ -28,9 +28,17 @@ ActiveRecord::Schema.define(:version => 20140214092021) do
     t.string   "slug"
     t.string   "background_color"
     t.string   "primary_color"
-    t.string   "secondary_color"
-    t.datetime "created_at",       :null => false
-    t.datetime "updated_at",       :null => false
+    t.string   "sidenav_header_color"
+    t.string   "sidenav_header_text_color"
+    t.string   "banner_text_color"
+    t.string   "question_heading_color"
+    t.string   "answer_1_color"
+    t.string   "answer_2_color"
+    t.string   "answer_3_color"
+    t.string   "answer_4_color"
+    t.string   "button_text_color"
+    t.datetime "created_at",                :null => false
+    t.datetime "updated_at",                :null => false
   end
 
   add_index "quiz_partners", ["slug"], :name => "index_quiz_partners_on_slug", :unique => true
@@ -68,6 +76,7 @@ ActiveRecord::Schema.define(:version => 20140214092021) do
     t.integer  "correct_answer_number"
     t.datetime "created_at",            :null => false
     t.datetime "updated_at",            :null => false
+    t.string   "image_url"
   end
 
   add_index "quiz_questions", ["quiz_id"], :name => "index_quiz_questions_on_quiz_id"
@@ -135,14 +144,19 @@ ActiveRecord::Schema.define(:version => 20140214092021) do
     t.string   "image_uid"
     t.string   "background_color"
     t.string   "primary_color"
-    t.string   "secondary_color"
+    t.string   "sidenav_header_color"
+    t.string   "sidenav_header_text_color"
+    t.string   "banner_text_color"
+    t.string   "question_heading_color"
     t.string   "answer_1_color"
     t.string   "answer_2_color"
     t.string   "answer_3_color"
     t.string   "answer_4_color"
+    t.string   "button_text_color"
     t.boolean  "no_follow"
-    t.datetime "created_at",         :null => false
-    t.datetime "updated_at",         :null => false
+    t.datetime "created_at",                :null => false
+    t.datetime "updated_at",                :null => false
+    t.string   "widget_url"
   end
 
   add_index "quiz_widgets", ["partner_id"], :name => "index_quiz_widgets_on_partner_id"

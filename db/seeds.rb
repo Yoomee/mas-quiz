@@ -1,6 +1,6 @@
 # encoding: UTF-8
 
-Quiz::Partner.create(:name => "MAS", :background_color => '#EEEFF2', :primary_color => '#b9dd48', :secondary_color => '#536675')
+Quiz::Partner.create(:name => "MAS", :background_color => '#EEEFF2', :primary_color => '#b9dd48')
 
 quiz = Quiz::Quiz.new(:name_en => "Managing Your Money Quiz", :slogan_en => "Try the Managing Your Money Quiz")
 
@@ -140,7 +140,20 @@ quiz.questions.build(
 
 quiz.save
 Quiz::Quiz.all.each_with_index do |quiz, index|
-  quiz.widgets.create(:partner_name => "Partner #{index}", :feed_url_en => "https://www.publish2.com/organizations/4668/feeds/2026/content.json", :background_color => '#EEEFF2', :primary_color => '#b9dd48', :secondary_color => '#536675',:answer_1_color => '#b9dd48', :answer_2_color => '#ebd52f', :answer_3_color => '#2980b9', :answer_4_color => '#e74c3c')
+  quiz.widgets.create(:partner_name => "Partner #{index}",
+                      :feed_url_en => "https://www.publish2.com/organizations/4668/feeds/2026/content.json",
+                      :background_color => '#EEEFF2',
+                      :primary_color => '#b9dd48',
+                      :question_heading_color => '#68A520',
+                      :banner_text_color => '#616655',
+                      :sidenav_header_color => '#536675',
+                      :sidenav_header_text_color => '#ffffff',
+                      :banner_text_color => '#6C6E6E',
+                      :answer_1_color => '#b9dd48',
+                      :answer_2_color => '#ebd52f',
+                      :answer_3_color => '#2980b9',
+                      :answer_4_color => '#e74c3c',
+                      :button_text_color => '#444444')
 end
 
 
@@ -157,7 +170,7 @@ quiz.questions.build(
   :answer_3_en => "",
   :answer_4_en => "",
   :correct_answer_number => 2,
-  :image => File.read('lib/assets/creditreport.jpg')
+  # :image => File.read('lib/assets/creditreport.jpg')
 )
 
 quiz.questions.build(
@@ -167,7 +180,7 @@ quiz.questions.build(
   :answer_3_en => "",
   :answer_4_en => "",
   :correct_answer_number => 2,
-  :image => File.read('lib/assets/100.jpg')
+  # :image => File.read('lib/assets/100.jpg')
 )
 
 quiz.questions.build(
@@ -177,7 +190,7 @@ quiz.questions.build(
   :answer_3_en => "",
   :answer_4_en => "",
   :correct_answer_number => 1,
-  :image => File.read('lib/assets/pounds.png')
+  # :image => File.read('lib/assets/pounds.png')
 )
 
 quiz.questions.build(
@@ -187,7 +200,7 @@ quiz.questions.build(
   :answer_3_en => "",
   :answer_4_en => "",
   :correct_answer_number => 1,
-  :image => File.read('lib/assets/clipboard.jpg')
+  # :image => File.read('lib/assets/clipboard.jpg')
 )
 
 quiz.questions.build(
@@ -197,7 +210,7 @@ quiz.questions.build(
   :answer_3_en => "",
   :answer_4_en => "",
   :correct_answer_number => 1,
-  :image => File.read('lib/assets/error.jpg')
+  # :image => File.read('lib/assets/error.jpg')
 )
 
 quiz.questions.build(
@@ -207,7 +220,7 @@ quiz.questions.build(
   :answer_3_en => "",
   :answer_4_en => "",
   :correct_answer_number => 1,
-  :image => File.read('lib/assets/pounds.png')
+  # :image => File.read('lib/assets/pounds.png')
 )
 
 quiz.questions.build(
@@ -217,7 +230,7 @@ quiz.questions.build(
   :answer_3_en => "",
   :answer_4_en => "",
   :correct_answer_number => 2,
-  :image => File.read('lib/assets/signpost.jpg')
+  # :image => File.read('lib/assets/signpost.jpg')
 )
 
 quiz.questions.build(
@@ -227,7 +240,7 @@ quiz.questions.build(
   :answer_3_en => "",
   :answer_4_en => "",
   :correct_answer_number => 1,
-  :image => File.read('lib/assets/calendar.png')
+  # :image => File.read('lib/assets/calendar.png')
 )
 
 quiz.questions.build(
@@ -237,7 +250,7 @@ quiz.questions.build(
   :answer_3_en => "",
   :answer_4_en => "",
   :correct_answer_number => 2,
-  :image => File.read('lib/assets/mortarboard.jpg')
+  # :image => File.read('lib/assets/mortarboard.jpg')
 )
 
 quiz.questions.build(
@@ -247,7 +260,7 @@ quiz.questions.build(
   :answer_3_en => "",
   :answer_4_en => "",
   :correct_answer_number => 2,
-  :image => File.read('lib/assets/gavel.jpg')
+  # :image => File.read('lib/assets/gavel.jpg')
 )
 
 quiz.save
@@ -257,11 +270,16 @@ Quiz::Widget.create({:quiz => quiz,
                     :front_page_text_en => "Credit Ratings Myth Busters Quiz\n\n\nYour credit report is used by lenders to provide a rating or score they use to decide whether to lend you money or not, and at what rate.n\n\nTry our quiz to see how much you know about how credit reports work.",
                     :background_color => '#EEEFF2',
                     :primary_color => '#b9dd48',
-                    :secondary_color => '#536675',
+                    :banner_text_color => '#616655',
+                    :sidenav_header_color => '#536675',
+                    :sidenav_header_text_color => '#ffffff',
+                    :question_heading_color => '#68A520',
+                    :banner_text_color => '#6C6E6E',
                     :answer_1_color => '#b9dd48',
                     :answer_2_color => '#ebd52f',
                     :answer_3_color => '#2980b9',
                     :answer_4_color => '#e74c3c',
+                    :button_text_color => '#444444',
                     :question_1_information_en => 'Checking your own credit report will not affect your credit rating. It will not show on your personal credit report and will not show up when potential lenders request a credit check',
                     :question_2_information_en => 'Debts are linked to a person, not an address, and the debts move with the person. Anyone living at your address before you should not affect anyone else living there now, unless that person is tied to you in some way financially, like husband and wife.',
                     :question_3_information_en => 'Having no credit history can impact your credit rating, as lenders will have little or no information on your previous financial behaviour to base their lending decision.',
