@@ -31,10 +31,10 @@ quiz/mas-logo.png: quiz/mas-logo-75eb5fae2027a9bef39e7cd87d3b1ccd.png
 quiz/mas-logo/index.png: quiz/mas-logo-75eb5fae2027a9bef39e7cd87d3b1ccd.png
 quiz/tick.png: quiz/tick-1006a7db5932b180a3cf8e86ab1cb50f.png
 quiz/tick/index.png: quiz/tick-1006a7db5932b180a3cf8e86ab1cb50f.png
-quiz/admin.js: quiz/admin-57a7b10c63067e74969e2fb4735ba3d4.js
-quiz/admin/index.js: quiz/admin-57a7b10c63067e74969e2fb4735ba3d4.js
-quiz/application.js: quiz/application-fc3358b4ec1e8aeabb1d0ce2527c7b50.js
-quiz/application/index.js: quiz/application-fc3358b4ec1e8aeabb1d0ce2527c7b50.js
+quiz/admin.js: quiz/admin-8a8e06b88265e32f42b0792d6e86ddef.js
+quiz/admin/index.js: quiz/admin-8a8e06b88265e32f42b0792d6e86ddef.js
+quiz/application.js: quiz/application-82c4d2a159523a5335b8137b151ddb54.js
+quiz/application/index.js: quiz/application-82c4d2a159523a5335b8137b151ddb54.js
 quiz/embed.js: quiz/embed-f4540f07ecc163ea4467b69c6af25b3f.js
 quiz/embed/index.js: quiz/embed-f4540f07ecc163ea4467b69c6af25b3f.js
 quiz/admin.css: quiz/admin-d7ddaf9e58d509123fb470aabf274a62.css
