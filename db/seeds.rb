@@ -265,7 +265,7 @@ quiz.questions.build(
 
 quiz.save
 Quiz::Widget.create({:quiz => quiz,
-                    :partner_name => "Money Advice Service",
+                    :partner_id => 1,
                     :feed_url_en => "https://www.publish2.com/organizations/4668/feeds/2026/content.json",
                     :front_page_text_en => "Credit Ratings Myth Busters Quiz\n\n\nYour credit report is used by lenders to provide a rating or score they use to decide whether to lend you money or not, and at what rate.\n\nTry our quiz to see how much you know about how credit reports work.",
                     :background_color => '#EEEFF2',
