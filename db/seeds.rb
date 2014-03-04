@@ -149,19 +149,19 @@ Quiz::Quiz.all.each_with_index do |quiz, index|
                       :sidenav_header_color => '#536675',
                       :sidenav_header_text_color => '#ffffff',
                       :banner_text_color => '#6C6E6E',
-                      :answer_1_color => '#b9dd48',
-                      :answer_2_color => '#ebd52f',
-                      :answer_3_color => '#2980b9',
-                      :answer_4_color => '#e74c3c',
+                      :button_color => '#b9dd48',
                       :button_text_color => '#444444')
 end
 
 
 quiz = Quiz::Quiz.new(:name_en => 'Credit Ratings Myth Busters',
                       :slogan_en => 'Try the Credit Ratings Myth Busters Quiz',
-                      :score_summary_low_en => 'Bad Credit',
+                      :score_summary_low_en => 'A shaky rating',
                       :score_summary_mid_en => 'Would you credit it?',
-                      :score_summary_high_en => 'A credit to yourself')
+                      :score_summary_high_en => 'A credit to yourself',
+                      :score_summary_low_blurb_en => 'Your understanding of how credit ratings work is shaky, to say the least!  So take a good look at our answers. Knowing what’s what could make all the difference if you need to apply for a loan, mortgage or credit card.',
+                      :score_summary_mid_blurb_en => 'You have a pretty good idea of what you need to know about credit reports. But some of the gaps in your knowledge could hold you back when looking for a good credit card, loan or mortgage.',
+                      :score_summary_high_blurb_en => 'Well done, you know your stuff when it comes to credit reports!')
 
 quiz.questions.build(
   :question_en => "Checking your credit report numerous times a year will affect your rating.",
@@ -266,7 +266,7 @@ quiz.questions.build(
 quiz.save
 Quiz::Widget.create({:quiz => quiz,
                     :partner_id => 1,
-                    :feed_url_en => "https://www.publish2.com/organizations/4668/feeds/2026/content.json",
+                    # :feed_url_en => "https://www.publish2.com/organizations/4668/feeds/2026/content.json",
                     :front_page_text_en => "Credit Ratings Myth Busters Quiz\n\n\nYour credit report is used by lenders to provide a rating or score they use to decide whether to lend you money or not, and at what rate.\n\nTry our quiz to see how much you know about how credit reports work.",
                     :background_color => '#EEEFF2',
                     :primary_color => '#b9dd48',
@@ -275,10 +275,7 @@ Quiz::Widget.create({:quiz => quiz,
                     :sidenav_header_text_color => '#ffffff',
                     :question_heading_color => '#68A520',
                     :banner_text_color => '#6C6E6E',
-                    :answer_1_color => '#b9dd48',
-                    :answer_2_color => '#ebd52f',
-                    :answer_3_color => '#2980b9',
-                    :answer_4_color => '#e74c3c',
+                    :button_color => '#b9dd48',
                     :button_text_color => '#444444',
                     :question_1_information_en => 'Checking your own credit report will not affect your credit rating. It will not show on your personal credit report and will not show up when potential lenders request a credit check',
                     :question_2_information_en => 'Debts are linked to a person, not an address, and the debts move with the person. Anyone living at your address before you should not affect anyone else living there now, unless that person is tied to you in some way financially, like husband and wife.',

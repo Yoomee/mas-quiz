@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140302232912) do
+ActiveRecord::Schema.define(:version => 20140304163305) do
 
   create_table "quiz_audit_records", :force => true do |t|
     t.integer  "user_id"
@@ -32,10 +32,7 @@ ActiveRecord::Schema.define(:version => 20140302232912) do
     t.string   "sidenav_header_text_color"
     t.string   "banner_text_color"
     t.string   "question_heading_color"
-    t.string   "answer_1_color"
-    t.string   "answer_2_color"
-    t.string   "answer_3_color"
-    t.string   "answer_4_color"
+    t.string   "button_color"
     t.string   "button_text_color"
     t.datetime "created_at",                :null => false
     t.datetime "updated_at",                :null => false
@@ -108,14 +105,20 @@ ActiveRecord::Schema.define(:version => 20140302232912) do
     t.string   "slogan_en"
     t.string   "slogan_cy"
     t.string   "score_summary_low_en"
+    t.text     "score_summary_low_blurb_en"
     t.string   "score_summary_mid_en"
+    t.text     "score_summary_mid_blurb_en"
     t.string   "score_summary_high_en"
+    t.text     "score_summary_high_blurb_en"
     t.string   "score_summary_low_cy"
+    t.text     "score_summary_low_blurb_cy"
     t.string   "score_summary_mid_cy"
+    t.text     "score_summary_mid_blurb_cy"
     t.string   "score_summary_high_cy"
-    t.boolean  "archived",              :default => false
-    t.datetime "created_at",                               :null => false
-    t.datetime "updated_at",                               :null => false
+    t.text     "score_summary_high_blurb_cy"
+    t.boolean  "archived",                    :default => false
+    t.datetime "created_at",                                     :null => false
+    t.datetime "updated_at",                                     :null => false
   end
 
   create_table "quiz_widget_hosts", :force => true do |t|
@@ -148,15 +151,14 @@ ActiveRecord::Schema.define(:version => 20140302232912) do
     t.string   "sidenav_header_text_color"
     t.string   "banner_text_color"
     t.string   "question_heading_color"
-    t.string   "answer_1_color"
-    t.string   "answer_2_color"
-    t.string   "answer_3_color"
-    t.string   "answer_4_color"
+    t.string   "button_color"
     t.string   "button_text_color"
     t.boolean  "no_follow"
     t.datetime "created_at",                :null => false
     t.datetime "updated_at",                :null => false
-    t.string   "widget_url"
+    t.string   "image_url_1"
+    t.string   "image_url_2"
+    t.string   "image_url_3"
   end
 
   add_index "quiz_widgets", ["partner_id"], :name => "index_quiz_widgets_on_partner_id"
