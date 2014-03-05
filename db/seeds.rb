@@ -170,7 +170,7 @@ quiz.questions.build(
   :answer_3_en => "",
   :answer_4_en => "",
   :correct_answer_number => 2,
-  # :image => File.read('lib/assets/creditreport.jpg')
+  :image_url => "https://www.moneyadviceservice.org.uk/images/q1creditreport.jpg"
 )
 
 quiz.questions.build(
@@ -180,7 +180,7 @@ quiz.questions.build(
   :answer_3_en => "",
   :answer_4_en => "",
   :correct_answer_number => 2,
-  # :image => File.read('lib/assets/100.jpg')
+  :image_url => "https://www.moneyadviceservice.org.uk/images/q2streetnumber.jpg"
 )
 
 quiz.questions.build(
@@ -190,7 +190,7 @@ quiz.questions.build(
   :answer_3_en => "",
   :answer_4_en => "",
   :correct_answer_number => 1,
-  # :image => File.read('lib/assets/pounds.png')
+  :image_url => "https://www.moneyadviceservice.org.uk/images/q3creditcards.jpg"
 )
 
 quiz.questions.build(
@@ -200,7 +200,7 @@ quiz.questions.build(
   :answer_3_en => "",
   :answer_4_en => "",
   :correct_answer_number => 1,
-  # :image => File.read('lib/assets/clipboard.jpg')
+  :image_url => "https://www.moneyadviceservice.org.uk/images/q4clipboardwithtick.jpg"
 )
 
 quiz.questions.build(
@@ -210,7 +210,7 @@ quiz.questions.build(
   :answer_3_en => "",
   :answer_4_en => "",
   :correct_answer_number => 1,
-  # :image => File.read('lib/assets/error.jpg')
+  :image_url => "https://www.moneyadviceservice.org.uk/images/q5errorsigns.jpg"
 )
 
 quiz.questions.build(
@@ -220,7 +220,7 @@ quiz.questions.build(
   :answer_3_en => "",
   :answer_4_en => "",
   :correct_answer_number => 1,
-  # :image => File.read('lib/assets/pounds.png')
+  :image_url => "https://www.moneyadviceservice.org.uk/images/q6coins.png"
 )
 
 quiz.questions.build(
@@ -230,7 +230,7 @@ quiz.questions.build(
   :answer_3_en => "",
   :answer_4_en => "",
   :correct_answer_number => 2,
-  # :image => File.read('lib/assets/signpost.jpg')
+  :image_url => "https://www.moneyadviceservice.org.uk/images/q7calendar.png"
 )
 
 quiz.questions.build(
@@ -240,7 +240,7 @@ quiz.questions.build(
   :answer_3_en => "",
   :answer_4_en => "",
   :correct_answer_number => 1,
-  # :image => File.read('lib/assets/calendar.png')
+  :image_url => "https://www.moneyadviceservice.org.uk/images/q8oops.jpg"
 )
 
 quiz.questions.build(
@@ -250,7 +250,7 @@ quiz.questions.build(
   :answer_3_en => "",
   :answer_4_en => "",
   :correct_answer_number => 2,
-  # :image => File.read('lib/assets/mortarboard.jpg')
+  :image_url => "https://www.moneyadviceservice.org.uk/images/q9graduatecap.jpg"
 )
 
 quiz.questions.build(
@@ -260,7 +260,7 @@ quiz.questions.build(
   :answer_3_en => "",
   :answer_4_en => "",
   :correct_answer_number => 2,
-  # :image => File.read('lib/assets/gavel.jpg')
+  :image_url => "https://www.moneyadviceservice.org.uk/images/q10gavel.jpg"
 )
 
 quiz.save
