@@ -19,7 +19,7 @@ GIT
 
 GIT
   remote: https://ec328b2267bdb5056f966233dc2a43a1beb60e7c:x-oauth-basic@github.com/moneyadviceservice/quiz.git
-  revision: e95e4ae46d4ae6598678764453ea51005ca37543
+  revision: 1be55afdd55a631e92c72e2ef6f19ea1cef56dac
   specs:
     quiz (0.0.1)
       cocoon (~> 1.2.5)
