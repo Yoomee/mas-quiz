@@ -163,84 +163,15 @@ quiz = Quiz::Quiz.new(:name_en => 'Credit Ratings Myth Busters',
                       :score_summary_mid_blurb_en => 'You have a pretty good idea of what you need to know about credit reports. But some of the gaps in your knowledge could hold you back when looking for a good credit card, loan or mortgage.',
                       :score_summary_high_blurb_en => 'Well done, you know your stuff when it comes to credit reports!')
 
+
 quiz.questions.build(
-  :question_en => "Checking your credit report numerous times a year will affect your rating.",
+  :question_en => "Having a criminal record will affect your ability to get credit.",
   :answer_1_en => "True",
   :answer_2_en => "False",
   :answer_3_en => "",
   :answer_4_en => "",
   :correct_answer_number => 2,
-  :image_url => "https://www.moneyadviceservice.org.uk/images/q1creditreport.jpg"
-)
-
-quiz.questions.build(
-  :question_en => "A credit report is associated with your name and address.",
-  :answer_1_en => "True",
-  :answer_2_en => "False",
-  :answer_3_en => "",
-  :answer_4_en => "",
-  :correct_answer_number => 2,
-  :image_url => "https://www.moneyadviceservice.org.uk/images/q2streetnumber.jpg"
-)
-
-quiz.questions.build(
-  :question_en => "Having no credit history can impact your credit rating.",
-  :answer_1_en => "True",
-  :answer_2_en => "False",
-  :answer_3_en => "",
-  :answer_4_en => "",
-  :correct_answer_number => 1,
-  :image_url => "https://www.moneyadviceservice.org.uk/images/q3creditcards.jpg"
-)
-
-quiz.questions.build(
-  :question_en => "It is possible to improve your credit rating.",
-  :answer_1_en => "True",
-  :answer_2_en => "False",
-  :answer_3_en => "",
-  :answer_4_en => "",
-  :correct_answer_number => 1,
-  :image_url => "https://www.moneyadviceservice.org.uk/images/q4clipboardwithtick.jpg"
-)
-
-quiz.questions.build(
-  :question_en => "It is possible to correct mistakes on your credit report.",
-  :answer_1_en => "True",
-  :answer_2_en => "False",
-  :answer_3_en => "",
-  :answer_4_en => "",
-  :correct_answer_number => 1,
-  :image_url => "https://www.moneyadviceservice.org.uk/images/q5errorsigns.jpg"
-)
-
-quiz.questions.build(
-  :question_en => "You have to pay for your credit report.",
-  :answer_1_en => "True",
-  :answer_2_en => "False",
-  :answer_3_en => "",
-  :answer_4_en => "",
-  :correct_answer_number => 1,
-  :image_url => "https://www.moneyadviceservice.org.uk/images/q6coins.png"
-)
-
-quiz.questions.build(
-  :question_en => "An unsuccessful credit card application means you won’t get credit in the future.",
-  :answer_1_en => "True",
-  :answer_2_en => "False",
-  :answer_3_en => "",
-  :answer_4_en => "",
-  :correct_answer_number => 2,
-  :image_url => "https://www.moneyadviceservice.org.uk/images/q7calendar.png"
-)
-
-quiz.questions.build(
-  :question_en => "Late credit card payments will impact your credit score.",
-  :answer_1_en => "True",
-  :answer_2_en => "False",
-  :answer_3_en => "",
-  :answer_4_en => "",
-  :correct_answer_number => 1,
-  :image_url => "https://www.moneyadviceservice.org.uk/images/q8oops.jpg"
+  :image_url => "https://www.moneyadviceservice.org.uk/images/q10gavel.jpg"
 )
 
 quiz.questions.build(
@@ -254,13 +185,83 @@ quiz.questions.build(
 )
 
 quiz.questions.build(
-  :question_en => "Having a criminal record will affect your ability to get credit.",
+  :question_en => "Late credit card payments will impact your credit score.",
+  :answer_1_en => "True",
+  :answer_2_en => "False",
+  :answer_3_en => "",
+  :answer_4_en => "",
+  :correct_answer_number => 1,
+  :image_url => "https://www.moneyadviceservice.org.uk/images/q8oops.jpg"
+)
+
+quiz.questions.build(
+  :question_en => "An unsuccessful credit card application means you won’t get credit in the future.",
   :answer_1_en => "True",
   :answer_2_en => "False",
   :answer_3_en => "",
   :answer_4_en => "",
   :correct_answer_number => 2,
-  :image_url => "https://www.moneyadviceservice.org.uk/images/q10gavel.jpg"
+  :image_url => "https://www.moneyadviceservice.org.uk/images/q7calendar.png"
+)
+
+quiz.questions.build(
+  :question_en => "You have to pay for your credit report.",
+  :answer_1_en => "True",
+  :answer_2_en => "False",
+  :answer_3_en => "",
+  :answer_4_en => "",
+  :correct_answer_number => 1,
+  :image_url => "https://www.moneyadviceservice.org.uk/images/q6coins.png"
+)
+
+quiz.questions.build(
+  :question_en => "It is possible to correct mistakes on your credit report.",
+  :answer_1_en => "True",
+  :answer_2_en => "False",
+  :answer_3_en => "",
+  :answer_4_en => "",
+  :correct_answer_number => 1,
+  :image_url => "https://www.moneyadviceservice.org.uk/images/q5errorsigns.jpg"
+)
+
+quiz.questions.build(
+  :question_en => "It is possible to improve your credit rating.",
+  :answer_1_en => "True",
+  :answer_2_en => "False",
+  :answer_3_en => "",
+  :answer_4_en => "",
+  :correct_answer_number => 1,
+  :image_url => "https://www.moneyadviceservice.org.uk/images/q4clipboardwithtick.jpg"
+)
+
+quiz.questions.build(
+  :question_en => "Having no credit history can impact your credit rating.",
+  :answer_1_en => "True",
+  :answer_2_en => "False",
+  :answer_3_en => "",
+  :answer_4_en => "",
+  :correct_answer_number => 1,
+  :image_url => "https://www.moneyadviceservice.org.uk/images/q3creditcards.jpg"
+)
+
+quiz.questions.build(
+  :question_en => "A credit report is associated with your name and address.",
+  :answer_1_en => "True",
+  :answer_2_en => "False",
+  :answer_3_en => "",
+  :answer_4_en => "",
+  :correct_answer_number => 2,
+  :image_url => "https://www.moneyadviceservice.org.uk/images/q2streetnumber.jpg"
+)
+
+quiz.questions.build(
+  :question_en => "Checking your credit report numerous times a year will affect your rating.",
+  :answer_1_en => "True",
+  :answer_2_en => "False",
+  :answer_3_en => "",
+  :answer_4_en => "",
+  :correct_answer_number => 2,
+  :image_url => "https://www.moneyadviceservice.org.uk/images/q1creditreport.jpg"
 )
 
 quiz.save
