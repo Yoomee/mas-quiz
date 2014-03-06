@@ -163,85 +163,14 @@ quiz = Quiz::Quiz.new(:name_en => 'Credit Ratings Myth Busters',
                       :score_summary_mid_blurb_en => 'You have a pretty good idea of what you need to know about credit reports. But some of the gaps in your knowledge could hold you back when looking for a good credit card, loan or mortgage.',
                       :score_summary_high_blurb_en => 'Well done, you know your stuff when it comes to credit reports!')
 
-
 quiz.questions.build(
-  :question_en => "Having a criminal record will affect your ability to get credit.",
+  :question_en => "Checking your credit report numerous times a year will affect your rating.",
   :answer_1_en => "True",
   :answer_2_en => "False",
   :answer_3_en => "",
   :answer_4_en => "",
   :correct_answer_number => 2,
-  :image_url => "https://www.moneyadviceservice.org.uk/images/q10gavel.jpg"
-)
-
-quiz.questions.build(
-  :question_en => "Having an outstanding student loan will make it more difficult to get credit in the future. ",
-  :answer_1_en => "True",
-  :answer_2_en => "False",
-  :answer_3_en => "",
-  :answer_4_en => "",
-  :correct_answer_number => 2,
-  :image_url => "https://www.moneyadviceservice.org.uk/images/q9graduatecap.jpg"
-)
-
-quiz.questions.build(
-  :question_en => "Late credit card payments will impact your credit score.",
-  :answer_1_en => "True",
-  :answer_2_en => "False",
-  :answer_3_en => "",
-  :answer_4_en => "",
-  :correct_answer_number => 1,
-  :image_url => "https://www.moneyadviceservice.org.uk/images/q8oops.jpg"
-)
-
-quiz.questions.build(
-  :question_en => "An unsuccessful credit card application means you won’t get credit in the future.",
-  :answer_1_en => "True",
-  :answer_2_en => "False",
-  :answer_3_en => "",
-  :answer_4_en => "",
-  :correct_answer_number => 2,
-  :image_url => "https://www.moneyadviceservice.org.uk/images/q7calendar.png"
-)
-
-quiz.questions.build(
-  :question_en => "You have to pay for your credit report.",
-  :answer_1_en => "True",
-  :answer_2_en => "False",
-  :answer_3_en => "",
-  :answer_4_en => "",
-  :correct_answer_number => 1,
-  :image_url => "https://www.moneyadviceservice.org.uk/images/q6coins.png"
-)
-
-quiz.questions.build(
-  :question_en => "It is possible to correct mistakes on your credit report.",
-  :answer_1_en => "True",
-  :answer_2_en => "False",
-  :answer_3_en => "",
-  :answer_4_en => "",
-  :correct_answer_number => 1,
-  :image_url => "https://www.moneyadviceservice.org.uk/images/q5errorsigns.jpg"
-)
-
-quiz.questions.build(
-  :question_en => "It is possible to improve your credit rating.",
-  :answer_1_en => "True",
-  :answer_2_en => "False",
-  :answer_3_en => "",
-  :answer_4_en => "",
-  :correct_answer_number => 1,
-  :image_url => "https://www.moneyadviceservice.org.uk/images/q4clipboardwithtick.jpg"
-)
-
-quiz.questions.build(
-  :question_en => "Having no credit history can impact your credit rating.",
-  :answer_1_en => "True",
-  :answer_2_en => "False",
-  :answer_3_en => "",
-  :answer_4_en => "",
-  :correct_answer_number => 1,
-  :image_url => "https://www.moneyadviceservice.org.uk/images/q3creditcards.jpg"
+  :image_url => "https://www.moneyadviceservice.org.uk/images/q1creditreport.jpg"
 )
 
 quiz.questions.build(
@@ -255,13 +184,83 @@ quiz.questions.build(
 )
 
 quiz.questions.build(
-  :question_en => "Checking your credit report numerous times a year will affect your rating.",
+  :question_en => "Having no credit history can impact your credit rating.",
+  :answer_1_en => "True",
+  :answer_2_en => "False",
+  :answer_3_en => "",
+  :answer_4_en => "",
+  :correct_answer_number => 1,
+  :image_url => "https://www.moneyadviceservice.org.uk/images/q3creditcards.jpg"
+)
+
+quiz.questions.build(
+  :question_en => "It is possible to improve your credit rating.",
+  :answer_1_en => "True",
+  :answer_2_en => "False",
+  :answer_3_en => "",
+  :answer_4_en => "",
+  :correct_answer_number => 1,
+  :image_url => "https://www.moneyadviceservice.org.uk/images/q4clipboardwithtick.jpg"
+)
+
+quiz.questions.build(
+  :question_en => "It is possible to correct mistakes on your credit report.",
+  :answer_1_en => "True",
+  :answer_2_en => "False",
+  :answer_3_en => "",
+  :answer_4_en => "",
+  :correct_answer_number => 1,
+  :image_url => "https://www.moneyadviceservice.org.uk/images/q5errorsigns.jpg"
+)
+
+quiz.questions.build(
+  :question_en => "You have to pay for your credit report.",
+  :answer_1_en => "True",
+  :answer_2_en => "False",
+  :answer_3_en => "",
+  :answer_4_en => "",
+  :correct_answer_number => 1,
+  :image_url => "https://www.moneyadviceservice.org.uk/images/q6coins.png"
+)
+
+quiz.questions.build(
+  :question_en => "An unsuccessful credit card application means you won’t get credit in the future.",
   :answer_1_en => "True",
   :answer_2_en => "False",
   :answer_3_en => "",
   :answer_4_en => "",
   :correct_answer_number => 2,
-  :image_url => "https://www.moneyadviceservice.org.uk/images/q1creditreport.jpg"
+  :image_url => "https://www.moneyadviceservice.org.uk/images/q7calendar.png"
+)
+
+quiz.questions.build(
+  :question_en => "Late credit card payments will impact your credit score.",
+  :answer_1_en => "True",
+  :answer_2_en => "False",
+  :answer_3_en => "",
+  :answer_4_en => "",
+  :correct_answer_number => 1,
+  :image_url => "https://www.moneyadviceservice.org.uk/images/q8oops.jpg"
+)
+
+quiz.questions.build(
+  :question_en => "Having an outstanding student loan will make it more difficult to get credit in the future. ",
+  :answer_1_en => "True",
+  :answer_2_en => "False",
+  :answer_3_en => "",
+  :answer_4_en => "",
+  :correct_answer_number => 2,
+  :image_url => "https://www.moneyadviceservice.org.uk/images/q9graduatecap.jpg"
+)
+
+quiz.questions.build(
+  :question_en => "Having a criminal record will affect your ability to get credit.",
+  :answer_1_en => "True",
+  :answer_2_en => "False",
+  :answer_3_en => "",
+  :answer_4_en => "",
+  :correct_answer_number => 2,
+  :image_url => "https://www.moneyadviceservice.org.uk/images/q10gavel.jpg"
 )
 
 quiz.save
@@ -270,14 +269,14 @@ Quiz::Widget.create({:quiz => quiz,
                     # :feed_url_en => "https://www.publish2.com/organizations/4668/feeds/2026/content.json",
                     :front_page_text_en => "Credit Ratings Myth Busters Quiz\n\n\nYour credit report is used by lenders to provide a rating or score they use to decide whether to lend you money or not, and at what rate.\n\nTry our quiz to see how much you know about how credit reports work.",
                     :background_color => '#EEEFF2',
-                    :primary_color => '#b9dd48',
-                    :banner_text_color => '#616655',
-                    :sidenav_header_color => '#536675',
+                    :primary_color => '#844a07',
+                    :banner_text_color => '#ffffff',
+                    :sidenav_header_color => '#12171c',
                     :sidenav_header_text_color => '#ffffff',
-                    :question_heading_color => '#68A520',
-                    :banner_text_color => '#6C6E6E',
-                    :button_color => '#b9dd48',
-                    :button_text_color => '#444444',
+                    :question_heading_color => '#484240',
+                    :banner_text_color => '#ffffff',
+                    :button_color => '#3e8407',
+                    :button_text_color => '#ffffff',
                     :question_1_information_en => 'Checking your own credit report will not affect your credit rating. It will not show on your personal credit report and will not show up when potential lenders request a credit check',
                     :question_2_information_en => 'Debts are linked to a person, not an address, and the debts move with the person. Anyone living at your address before you should not affect anyone else living there now, unless that person is tied to you in some way financially, like husband and wife.',
                     :question_3_information_en => 'Having no credit history can impact your credit rating, as lenders will have little or no information on your previous financial behaviour to base their lending decision.',
@@ -286,6 +285,7 @@ Quiz::Widget.create({:quiz => quiz,
                     :question_6_information_en => 'UK consumers have the right to obtain a copy of their personal credit report from the credit reference agencies upon payment of a fee of £2. However some credit reference agencies may offer free trial periods with various added benefits but will charge after a certain period of time unless you unsubscribe. ',
                     :question_7_information_en => 'Being turned down for credit does not necessarily mean you will be turned down in the future. If a credit card application has been rejected by the lender check which credit reference agency they used and obtain a credit report to check if there are any mistakes. It may be wise to wait at least six months before applying again as multiple credit applications can damage your credit file. This will also give you the opportunity to improve your credit rating.',
                     :question_8_information_en => 'Late payments will register on your credit report for six years and can adversely affect your credit score but will generally have less impact on lenders’ credit decisions over time. ',
+                    :question_9_information_en => 'Student loans are not registered on your credit file.',
                     :question_10_information_en => 'Although a criminal record will not show up on your credit report, the consequences of things like fraud might. For example, if you were successfully sued to recover money you owe, the County Court Judgment (CCJ) would show on your credit file.  '
                     }, :without_protection => true)
 
